@@ -82,6 +82,7 @@ Both virtual machines were connected through a dedicated VirtualBox Internal Net
 ### 5.1 IP Address Configuration
 
 Virtual Machine| Network Interface| IP Address
+|---|---|---|
 Kali Linux| eth1| 192.168.30.10/24
 Ubuntu Server| enp0s8| 192.168.30.20/24
 
@@ -115,6 +116,7 @@ A TCP SYN scan was performed to identify open ports on the target server.
 The service detection scan identified the following open ports and services:
 
 Port| Service
+|---|---|
 22| OpenSSH
 5432| PostgreSQL
 8000| Splunkd HTTP service
