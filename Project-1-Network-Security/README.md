@@ -1,4 +1,4 @@
-### Project 1: Network Security and Data Transmission
+# Project 1: Network Security and Data Transmission
 
 ## 1. Introduction
 
@@ -46,11 +46,11 @@ Sales| 40| 192.168.40.0/24
 
 Each department had two PCs. Connectivity was tested between devices within the same VLAN, while communication between different VLANs was tested to verify isolation.
 
-# 4.1 Network Topology
+### 4.1 Network Topology
 
 ![Project 1 Network Topology](Packet-Tracer/project1-final-network-topology.png)
 
-# 4.2 VLAN Configuration
+### 4.2 VLAN Configuration
 
 The VLANs were configured on the two switches, with departmental ports assigned to their respective VLANs.
 
@@ -62,7 +62,7 @@ Switch 2
 
 ![SW2 VLAN Configuration](Packet-Tracer/SW2-VLAN-Configuration.png)
 
-# 4.3 Inter-VLAN Isolation
+### 4.3 Inter-VLAN Isolation
 
 An inter-VLAN connectivity test was performed from an HR workstation to a Finance workstation. The ping request timed out, demonstrating that communication between the tested VLANs was not permitted in the implemented configuration.
 
@@ -79,7 +79,7 @@ Two virtual machines were configured:
 
 Both virtual machines were connected through a dedicated VirtualBox Internal Network named "capstone-lab".
 
-# 5.1 IP Address Configuration
+### 5.1 IP Address Configuration
 
 Virtual Machine| Network Interface| IP Address
 Kali Linux| eth1| 192.168.30.10/24
@@ -98,19 +98,19 @@ The following scanning activities were performed:
 3. Service and version detection.
 4. Operating system detection.
 
-# 6.1 Host Discovery
+### 6.1 Host Discovery
 
 The host discovery scan confirmed that the Ubuntu Server was reachable on the network.
 
 ![Nmap Host Discovery](Nmap-Scans/Nmap-host-discovery.png)
 
-# 6.2 TCP Port Scanning
+### 6.2 TCP Port Scanning
 
 A TCP SYN scan was performed to identify open ports on the target server.
 
 ![Nmap TCP Port Scan](Nmap-Scans/nmap-tcp-port-scan.png)
 
-# 6.3 Service and Version Detection
+### 6.3 Service and Version Detection
 
 The service detection scan identified the following open ports and services:
 
@@ -122,7 +122,7 @@ Port| Service
 
 ![Nmap Service Version Detection](Nmap-Scans/nmap-service-version-detection.png)
 
-# 6.4 Operating System Detection
+### 6.4 Operating System Detection
 
 An operating system detection scan was performed. However, Nmap did not return a definitive operating system match.
 
@@ -134,13 +134,13 @@ Wireshark was used to capture and analyse traffic generated during communication
 
 Three protocols were examined: ICMP, HTTP and SSH.
 
-# 7.1 ICMP Traffic Analysis
+### 7.1 ICMP Traffic Analysis
 
 ICMP packets were captured while performing connectivity tests between the two virtual machines.
 
 ![ICMP Traffic](Wireshark-Evidence/wireshark-icmp-traffic.png)
 
-# 7.2 HTTP Traffic Analysis
+### 7.2 HTTP Traffic Analysis
 
 A temporary Python HTTP server was started on Ubuntu Server. A text file was requested from Kali Linux using HTTP.
 
@@ -148,7 +148,7 @@ Wireshark was used to inspect the communication. The captured HTTP request and r
 
 ![HTTP Plaintext Inspection](Wireshark-Evidence/http-plaintext-data-inspection.png)
 
-# 7.3 SSH Traffic Analysis
+### 7.3 SSH Traffic Analysis
 
 SSH traffic was captured during secure communication between Kali Linux and Ubuntu Server.
 
@@ -181,23 +181,23 @@ The original and decrypted files produced matching SHA-256 hashes, confirming th
 
 Note: SCP uses SSH for transport encryption. The OpenSSL exercise separately demonstrated file-level encryption. The original file transferred through SCP was therefore protected in transit by SSH.
 
-# 8.1 Original File Hash
+### 8.1 Original File Hash
 
 ![Original SHA256](Encryption-and-Hashing/SHA256-original-file.png)
 
-# 8.2 Original and Encrypted Hash Comparison
+### 8.2 Original and Encrypted Hash Comparison
 
 ![Hash Comparison](Encryption-and-Hashing/original-vs-encrypted-hash.png)
 
-# 8.3 File Integrity Verification on Ubuntu
+### 8.3 File Integrity Verification on Ubuntu
 
 ![File Integrity Verification](Encryption-and-Hashing/file-integrity-verification-ubuntu.png)
 
-# 8.4 Encrypted File Transfer Verification
+### 8.4 Encrypted File Transfer Verification
 
 ![Encrypted File Transfer](Encryption-and-Hashing/encrypted-file-transfer-verification.png)
 
-# 8.5 Decryption and Integrity Verification
+### 8.5 Decryption and Integrity Verification
 
 ![Decryption and Integrity Verification](Encryption-and-Hashing/decryption-and-integrity-verification.png)
 
