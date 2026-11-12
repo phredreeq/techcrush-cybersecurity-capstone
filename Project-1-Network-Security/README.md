@@ -19,16 +19,17 @@ The objectives of this project were to:
 
 ## 3. Tools and Technologies
 
-Tool| Purpose
-Cisco Packet Tracer| Network topology design and VLAN configuration
-VirtualBox| Virtual machine deployment
-Kali Linux| Security testing workstation
-Ubuntu Server| Target server
-Nmap| Network reconnaissance and port scanning
-Wireshark| Network traffic capture and analysis
-OpenSSL| File encryption and decryption
-SHA-256| File integrity verification
-SSH/SCP| Secure remote access and file transfer
+| Tool| Purpose|
+|---|---|
+|Cisco Packet Tracer| Network topology design and VLAN configuration|
+|VirtualBox| Virtual machine deployment|
+|Kali Linux| Security testing workstation|
+|Ubuntu Server| Target server|
+|Nmap| Network reconnaissance and port scanning|
+|Wireshark| Network traffic capture and analysis|
+|OpenSSL| File encryption and decryption|
+|SHA-256| File integrity verification|
+|SSH/SCP| Secure remote access and file transfer|
 
 ## 4. Network Design and VLAN Segmentation
 
@@ -37,6 +38,7 @@ A company network was designed using Cisco Packet Tracer. The topology consisted
 Each department was assigned a separate VLAN.
 
 Department| VLAN ID| Network Address
+|---|---|---|
 HR| 10| 192.168.10.0/24
 Finance| 20| 192.168.20.0/24
 IT| 30| 192.168.30.0/24
