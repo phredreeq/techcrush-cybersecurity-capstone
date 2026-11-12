@@ -1,11 +1,14 @@
 # Project 1: Network Security and Data Transmission
 
+---
+
 ## 1. Introduction
 
 This project was undertaken as part of the TechCrush Cybersecurity Internship Capstone. It focuses on designing and securing a company network, implementing network segmentation, performing network reconnaissance, analysing network traffic and demonstrating secure data transmission.
 
 The practical work involved using Cisco Packet Tracer to design a segmented network and VirtualBox to establish a testing environment with Kali Linux and Ubuntu Server.
 
+---
 
 ## 2. Project Objectives
 
@@ -18,6 +21,7 @@ The objectives of this project were to:
 - Capture and analyse network traffic using Wireshark.
 - Demonstrate file encryption, secure transfer and integrity verification.
 
+---
 
 ## 3. Tools and Technologies
 
@@ -33,6 +37,7 @@ The objectives of this project were to:
 |SHA-256| File integrity verification|
 |SSH/SCP| Secure remote access and file transfer|
 
+---
 
 ## 4. Network Design and VLAN Segmentation
 
@@ -71,6 +76,7 @@ An inter-VLAN connectivity test was performed from an HR workstation to a Financ
 
 ![Inter-VLAN Isolation Test](Packet-Tracer/inter-VLAN-Isolation-Test.png)
 
+---
 
 ## 5. Virtual Lab Environment
 
@@ -92,6 +98,7 @@ Ubuntu Server| enp0s8| 192.168.30.20/24
 
 The two machines were able to communicate over the dedicated internal network. SSH was also enabled on Ubuntu Server to allow secure remote access from Kali Linux.
 
+---
 
 ## 6. Network Reconnaissance Using Nmap
 
@@ -135,6 +142,7 @@ An operating system detection scan was performed. However, Nmap did not return a
 
 ![Nmap OS Detection](Nmap-Scans/nmap-OS-detection.png)
 
+---
 
 ## 7. Network Traffic Analysis Using Wireshark
 
@@ -170,6 +178,7 @@ The packet capture file is available in this folder:
 
 [Project 1 Data Transmission PCAP](Wireshark-Evidence/project1-data-transmission.pcapng)
 
+---
 
 ## 8. File Encryption and Integrity Verification
 
@@ -210,6 +219,7 @@ Note: SCP uses SSH for transport encryption. The OpenSSL exercise separately dem
 
 ![Decryption and Integrity Verification](Encryption-and-Hashing/decryption-and-integrity-verification.png)
 
+---
 
 ## 9. Security Recommendations
 
@@ -223,6 +233,7 @@ Based on the practical activities, the following security recommendations were i
 - Regularly update server software and operating systems.
 - Verify file integrity using cryptographic hashing.
 
+---
 
 ## 10. Key Learning Outcomes
 
@@ -236,6 +247,8 @@ This project strengthened my practical understanding of:
 - File encryption and decryption.
 - SHA-256 hashing and file integrity verification.
 - Practical security testing in a virtual lab environment.
+
+---
 
 ## 11. Project Structure
 
