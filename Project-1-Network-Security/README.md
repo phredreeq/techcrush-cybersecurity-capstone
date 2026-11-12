@@ -54,17 +54,17 @@ The VLANs were configured on the two switches, with departmental ports assigned 
 
 Switch 1
 
-!["SW1 VLAN Configuration"](Packet-Tracer/SW1-VLAN-Configuration.png)
+![SW1 VLAN Configuration](Packet-Tracer/SW1-VLAN-Configuration.png)
 
 Switch 2
 
-"SW2 VLAN Configuration" (Packet-Tracer/SW2-VLAN-Configuration.png)
+![SW2 VLAN Configuration](Packet-Tracer/SW2-VLAN-Configuration.png)
 
 # 4.3 Inter-VLAN Isolation
 
 An inter-VLAN connectivity test was performed from an HR workstation to a Finance workstation. The ping request timed out, demonstrating that communication between the tested VLANs was not permitted in the implemented configuration.
 
-"Inter-VLAN Isolation Test" (Packet-Tracer/inter-VLAN-Isolation-Test.png)
+![Inter-VLAN Isolation Test](Packet-Tracer/inter-VLAN-Isolation-Test.png)
 
 ## 5. Virtual Lab Environment
 
@@ -100,13 +100,13 @@ The following scanning activities were performed:
 
 The host discovery scan confirmed that the Ubuntu Server was reachable on the network.
 
-"Nmap Host Discovery" (Nmap-Scans/Nmap-host-discovery.png)
+![Nmap Host Discovery](Nmap-Scans/Nmap-host-discovery.png)
 
 # 6.2 TCP Port Scanning
 
 A TCP SYN scan was performed to identify open ports on the target server.
 
-"Nmap TCP Port Scan" (Nmap-Scans/nmap-tcp-port-scan.png)
+![Nmap TCP Port Scan](Nmap-Scans/nmap-tcp-port-scan.png)
 
 # 6.3 Service and Version Detection
 
@@ -118,13 +118,13 @@ Port| Service
 8000| Splunkd HTTP service
 8089| Splunkd
 
-"Nmap Service Version Detection" (Nmap-Scans/nmap-service-version-detection.png)
+![Nmap Service Version Detection](Nmap-Scans/nmap-service-version-detection.png)
 
 # 6.4 Operating System Detection
 
 An operating system detection scan was performed. However, Nmap did not return a definitive operating system match.
 
-"Nmap OS Detection" (Nmap-Scans/nmap-OS-detection.png)
+![Nmap OS Detection](Nmap-Scans/nmap-OS-detection.png)
 
 ## 7. Network Traffic Analysis Using Wireshark
 
@@ -136,7 +136,7 @@ Three protocols were examined: ICMP, HTTP and SSH.
 
 ICMP packets were captured while performing connectivity tests between the two virtual machines.
 
-"ICMP Traffic" (Wireshark-Evidence/wireshark-icmp-traffic.png)
+![ICMP Traffic](Wireshark-Evidence/wireshark-icmp-traffic.png)
 
 # 7.2 HTTP Traffic Analysis
 
@@ -144,7 +144,7 @@ A temporary Python HTTP server was started on Ubuntu Server. A text file was req
 
 Wireshark was used to inspect the communication. The captured HTTP request and response demonstrated that the transferred content was readable in plaintext.
 
-"HTTP Plaintext Inspection" (Wireshark-Evidence/http-plaintext-data-inspection.png)
+![HTTP Plaintext Inspection](Wireshark-Evidence/http-plaintext-data-inspection.png)
 
 # 7.3 SSH Traffic Analysis
 
@@ -152,13 +152,13 @@ SSH traffic was captured during secure communication between Kali Linux and Ubun
 
 The inspection showed SSH protocol negotiation and encrypted packet exchange.
 
-"SSH Traffic" (Wireshark-Evidence/wireshark-ssh-traffic.png)
+![SSH Traffic](Wireshark-Evidence/wireshark-ssh-traffic.png)
 
-"SSH Encrypted Traffic" (Wireshark-Evidence/ssh-encrypted-data-inspection.png)
+![SSH Encrypted Traffic](Wireshark-Evidence/ssh-encrypted-data-inspection.png)
 
 The packet capture file is available in this folder:
 
-"Project 1 Data Transmission PCAP" (Wireshark-Evidence/project1-data-transmission.pcapng)
+[Project 1 Data Transmission PCAP](Wireshark-Evidence/project1-data-transmission.pcapng)
 
 ## 8. File Encryption and Integrity Verification
 
@@ -181,23 +181,23 @@ Note: SCP uses SSH for transport encryption. The OpenSSL exercise separately dem
 
 # 8.1 Original File Hash
 
-"Original SHA256" (Encryption-and-Hashing/SHA256-original-file.png)
+![Original SHA256](Encryption-and-Hashing/SHA256-original-file.png)
 
 # 8.2 Original and Encrypted Hash Comparison
 
-"Hash Comparison" (Encryption-and-Hashing/original-vs-encrypted-hash.png)
+![Hash Comparison](Encryption-and-Hashing/original-vs-encrypted-hash.png)
 
 # 8.3 File Integrity Verification on Ubuntu
 
-"File Integrity Verification" (Encryption-and-Hashing/file-integrity-verification-ubuntu.png)
+![File Integrity Verification](Encryption-and-Hashing/file-integrity-verification-ubuntu.png)
 
 # 8.4 Encrypted File Transfer Verification
 
-"Encrypted File Transfer" (Encryption-and-Hashing/encrypted-file-transfer-verification.png)
+![Encrypted File Transfer](Encryption-and-Hashing/encrypted-file-transfer-verification.png)
 
 # 8.5 Decryption and Integrity Verification
 
-"Decryption and Integrity Verification" (Encryption-and-Hashing/decryption-and-integrity-verification.png)
+![Decryption and Integrity Verification](Encryption-and-Hashing/decryption-and-integrity-verification.png)
 
 ## 9. Security Recommendations
 
