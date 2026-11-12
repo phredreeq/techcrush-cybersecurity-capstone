@@ -6,6 +6,7 @@ This project was undertaken as part of the TechCrush Cybersecurity Internship Ca
 
 The practical work involved using Cisco Packet Tracer to design a segmented network and VirtualBox to establish a testing environment with Kali Linux and Ubuntu Server.
 
+
 ## 2. Project Objectives
 
 The objectives of this project were to:
@@ -16,6 +17,7 @@ The objectives of this project were to:
 - Identify exposed hosts, ports and services using Nmap.
 - Capture and analyse network traffic using Wireshark.
 - Demonstrate file encryption, secure transfer and integrity verification.
+
 
 ## 3. Tools and Technologies
 
@@ -30,6 +32,7 @@ The objectives of this project were to:
 |OpenSSL| File encryption and decryption|
 |SHA-256| File integrity verification|
 |SSH/SCP| Secure remote access and file transfer|
+
 
 ## 4. Network Design and VLAN Segmentation
 
@@ -68,6 +71,7 @@ An inter-VLAN connectivity test was performed from an HR workstation to a Financ
 
 ![Inter-VLAN Isolation Test](Packet-Tracer/inter-VLAN-Isolation-Test.png)
 
+
 ## 5. Virtual Lab Environment
 
 A separate practical testing environment was established using VirtualBox.
@@ -87,6 +91,7 @@ Kali Linux| eth1| 192.168.30.10/24
 Ubuntu Server| enp0s8| 192.168.30.20/24
 
 The two machines were able to communicate over the dedicated internal network. SSH was also enabled on Ubuntu Server to allow secure remote access from Kali Linux.
+
 
 ## 6. Network Reconnaissance Using Nmap
 
@@ -130,6 +135,7 @@ An operating system detection scan was performed. However, Nmap did not return a
 
 ![Nmap OS Detection](Nmap-Scans/nmap-OS-detection.png)
 
+
 ## 7. Network Traffic Analysis Using Wireshark
 
 Wireshark was used to capture and analyse traffic generated during communication between Kali Linux and Ubuntu Server.
@@ -163,6 +169,7 @@ The inspection showed SSH protocol negotiation and encrypted packet exchange.
 The packet capture file is available in this folder:
 
 [Project 1 Data Transmission PCAP](Wireshark-Evidence/project1-data-transmission.pcapng)
+
 
 ## 8. File Encryption and Integrity Verification
 
@@ -203,6 +210,7 @@ Note: SCP uses SSH for transport encryption. The OpenSSL exercise separately dem
 
 ![Decryption and Integrity Verification](Encryption-and-Hashing/decryption-and-integrity-verification.png)
 
+
 ## 9. Security Recommendations
 
 Based on the practical activities, the following security recommendations were identified:
@@ -214,6 +222,7 @@ Based on the practical activities, the following security recommendations were i
 - Monitor network traffic for suspicious activities.
 - Regularly update server software and operating systems.
 - Verify file integrity using cryptographic hashing.
+
 
 ## 10. Key Learning Outcomes
 
@@ -241,4 +250,5 @@ The project evidence is organised into the following folders:
 ---
 
 Programme: TechCrush Cybersecurity Internship
+
 Capstone Project: Network Security and Data Transmission
